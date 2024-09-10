@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import img from "/public/543-pizza-1.svg.png"
 import { useSelector } from "react-redux"
 
 function Header(){
@@ -11,7 +11,7 @@ function Header(){
         justify-between items-center font-semibold text-stone-200 
         text-lg sm:text-2xl " >
           <div className="flex gap-2 justify-center items-center">
-           <img src="/public/543-pizza-1.svg.png" className="w-10" alt="" />
+           <img src={img} className="w-10" alt="" />
               <Link to='/fastPizza' className="tracking-widest">
    Fast Pizaa
   </Link>     
